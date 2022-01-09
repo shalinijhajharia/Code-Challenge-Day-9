@@ -12,6 +12,21 @@
 // Write the function to find the bmi obtained.
 function bmi(weight, height) {
      //your code here
-    
+     let bmi=(weight)/height**2
+    if(bmi<=18.5)
+    {
+      return "Underweight";
+    }    
+    else if(bmi<=25.0)
+    {
+      return "Normal";
+    }
+    else if(bmi<=30.0)
+    {
+      return "Overweight";
+    }
+    else{
+      return "Obese";
+    }
   }
 //Use SpecRunner to check the Test Cases.
